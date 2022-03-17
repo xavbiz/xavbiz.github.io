@@ -1,0 +1,23 @@
+@import '~variables';
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.on {
+  max-height: 1000px;
+}
+
+.trigger {
+  cursor: pointer;
+}
+

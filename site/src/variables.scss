@@ -1,0 +1,39 @@
+$font-family: 'Poppins', sans-serif;
+
+$color-white: #fff;
+$color-black: #072227;
+$color-grey: #707070;
+$color-dark-grey: #4fbdba;
+$color-light-grey: #e3e3e3; 
+$color-green: #35858b;
+$color-red: #ff0000;
+$color-blue: #007cc7;
+
+$padding-sm: 1rem; //16px;
+$padding-lg: 1.5rem; //24px;
+$gutter-sm: $padding-sm;
+$gutter-lg: $padding-lg;
+$margin-sm: .875rem; //14px;
+$margin-lg: 1.25rem; //20px;
+
+
+$breakpoint-sm: 360px;
+$breakpoint-lg: 760px;
+$content-wrapper-sm: calc(100% - #{2 * $margin-sm});
+$content-wrapper: 960px;
+
+$layout-desktop: $breakpoint-lg;
+
+$font-body: 1rem; //16px;
+$font-body-sm: .875rem;//14px;
+$font-sm: .75rem; // 12px;
+$font-title-sm: 1.75rem; // 24px;
+$font-title: 2.2rem; // 28px;
+$font-subtitle-sm: 1.75rem; //24px
+$font-subtitle: 2.2rem; //28px;
+$font-emphasis: 1.25rem; //20px;
+
+$header-height: 80px;
+$footer-height: 20px;
+
+$bg-min-width: 600px;

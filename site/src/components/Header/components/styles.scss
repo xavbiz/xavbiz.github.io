@@ -1,0 +1,14 @@
+@import '~variables';
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  color: $color-green;
+  width: 100%;
+  text-align: center;
+  display: block;
+
+  &:hover {
+    color: $color-black;
+  }
+}

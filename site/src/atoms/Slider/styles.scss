@@ -1,0 +1,92 @@
+@import '~variables';
+
+.slider {
+  width: 100%;
+  max-width: $content-wrapper;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.lower {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev, .next {
+  width: 50px;
+  font-size: 40px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  svg path {
+    fill: $color-white;
+  }
+
+  &:hover svg path {
+    fill: $color-grey;
+  }
+}
+
+.quickAccess {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: $color-white;
+  margin: 0 5px;
+
+  &:hover {
+    background-color: $color-grey;
+  }
+}
+
+.quickAccessActive {
+  background-color: $color-grey;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+
+  @for $i from 0 through 15 {
+    &.slide#{$i} .item {
+      transform: translateX(-1% * ($i * 100));
+    }
+  }
+}
+
+.item {
+  min-width: 100%;
+  text-align: center;
+  padding: 0 $padding-sm;
+  display: flex;
+  flex-direction: column;
+  transition: transform .5s ease-in-out;
+}
+
+@media (min-width: $layout-desktop) {
+  .item {
+    padding: 0;
+  }
+}

@@ -1,0 +1,30 @@
+@import '~variables';
+
+.p {
+  margin: (2 * $margin-sm) 0;
+  color: inherit;
+  line-height: 1.6;
+  text-align: justify;
+
+  b, strong {
+    font-weight: 500;
+  }
+}
+
+.strong {
+  font-weight: 500;
+}
+
+.emphasis {
+  font-size: $font-emphasis;
+}
+
+.noTopMargin {
+  margin-top: 0;
+}
+
+@media (min-width: $layout-desktop) {
+  .title {
+    margin: (2 * $margin-lg) 0;
+  }
+}

@@ -1,0 +1,32 @@
+@import '~variables';
+
+$margin: $margin-lg;
+
+.list {
+  list-style-type: none;
+  line-height: 1.6;
+  margin: $margin-sm 0;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+
+    &:before {
+      content: '•';
+      font-size: 2rem;
+      line-height: 1.6;
+      padding: 0 1rem;
+      max-height: 1.6rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  i {
+    color: $color-green;
+  }
+
+  b, strong {
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,48 @@
+#!/bin/bash
+
+log() {
+  echo ">> " $@
+}
+
+install() {
+    docker-compose build
+}
+
+start() {
+    docker-compose up
+}
+
+stop() {
+    docker-compose stop
+}
+
+clean() {
+    docker-compose down
+}
+
+npm() {
+    docker-compose run \
+        -u $(id -u):$(id -g) \
+        --rm \
+        node \
+        npm $@;
+}
+
+git_push() {
+    git add --a && \
+    git commit -m $1 && \
+    git push origin $2
+}
+
+restart() {
+    docker-compose stop $1
+    docker-compose up -d $1
+}
+
+alias install='install'
+alias start='start'
+alias stop='stop'
+alias clean='clean'
+alias npm='npm'
+alias push='git_push'
+alias restart='restart'

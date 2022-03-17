@@ -1,0 +1,165 @@
+@import '~variables';
+
+$header-height: 80px;
+$iconWidth: 48px;
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-white;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto $iconWidth;
+  grid-template-rows: $header-height auto;
+  grid-template-areas:
+        "logo icon"
+        "nav nav";
+  justify-items: stretch;
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.nav {
+  grid-area: nav;
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+  display: block;
+}
+
+@for $i from 1 through 5 {
+  .nav#{$i} {
+    max-height: $i * $header-height; 
+  }
+}
+
+.navItem {
+  border-top: 1px solid $color-grey;
+  display: block;
+  width: 100%;
+
+  a {
+    display: block;
+    width: 100%;
+    color: inherit;
+    padding: $padding-sm;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-green;
+  }
+}
+
+.active {
+  color: $color-black;
+  background-color: $color-green;
+}
+
+.subnav {
+  display: none;
+  background-color: $color-white;
+  transition: max-height 0.3s ease-in;
+}
+
+.subnavItem {
+  width: max-content;
+}
+
+.menuIcon {
+  cursor: pointer;
+  grid-area: icon;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $layout-desktop) {
+
+  .header {
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "logo nav";
+    overflow: initial;
+    max-width: $content-wrapper;
+    margin: 0 auto;
+  }
+
+  .logo {
+    justify-self: left;
+    padding: 0 $padding-lg;
+    padding-left: 0;
+    margin-left: $margin-lg;
+  }
+
+  .nav {
+    height: $header-height;
+    max-height: $header-height;
+    justify-self: right;
+    margin-right: $margin-lg;
+  }
+
+  .langNav {
+    right: calc(((100% - #{$content-wrapper}) / 2) - (#{$iconWidth} / 4));
+  }
+
+  .navItem {
+    border: 0;
+    display: inline-block;
+    width: initial;
+    align-self: stretch;
+    position: relative;
+
+    &:last-of-type a {
+      padding-right: 0;
+    }
+
+    a {
+      padding: 0 $padding-lg;
+      line-height: $header-height;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-green;
+
+
+      .subnav1 {
+        max-height: $header-height; 
+      }
+
+      .subnav2 {
+        max-height: 2 * $header-height;
+      }
+    }
+  }
+
+  .active {
+    background-color: $color-white;
+    color: $color-green;
+  }
+
+  .subnav {
+    display: block;
+    max-height: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+}

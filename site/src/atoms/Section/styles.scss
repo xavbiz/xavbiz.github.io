@@ -1,0 +1,81 @@
+@import '~variables';
+
+.section {
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  min-width: $bg-min-width;
+  max-width: calc(#{$content-wrapper-sm} - #{$margin-sm});
+  margin: 0 auto;
+}
+
+.content {
+  position: relative;
+  margin: 80px 0 0;
+}
+
+.margin {
+  margin: 0 0 80px;
+}
+
+.marginBottom {
+  margin: 0 0 80px;
+}
+
+.noTopMargin {
+  margin-top: 0;
+}
+
+.right, .left {
+  + div {
+    margin-top: 80px;
+  }
+}
+
+.top + div {
+  margin-top: 80px;
+}
+
+.home {
+  min-width: 200%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.marie {
+  width: 300%;
+  
+  + div {
+    margin-top: 400px;
+  }
+}
+
+@media (min-width: $layout-desktop) {
+
+  .bg {
+    max-width: $content-wrapper;
+  }
+
+  .right, .left, .marie {
+    + div {
+      margin-top: 0;
+    }
+  }
+  .home {
+    min-width: $content-wrapper;
+    max-width: $content-wrapper;
+    top: 0%;
+    transform: translate(-50%, 0);
+  }
+
+}

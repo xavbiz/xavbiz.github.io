@@ -1,0 +1,134 @@
+@import '~variables';
+
+$base-height: $font-body;
+$font-size: $font-body;
+$font-size-sm: $font-body-sm;
+$input-height: $padding-lg;
+$padding: $padding-sm;
+
+.container {
+  display: inline-block;
+  margin-top: $padding * 2;
+  width: 100%;
+}
+
+.subContainer {
+  position: relative;
+  border-bottom: 1px solid $color-light-grey;
+  padding: (calc($padding / 2)) 0;
+
+  label {
+    position: absolute;
+    left: 0;
+    max-width: calc(100% - 30px);
+  }
+
+  input {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    height: $input-height;
+    font-family: $font-family;
+    font-size: initial;
+    background-color: initial;
+    padding-right: $font-size;
+
+    &:invalid {
+      outline: none;
+    }
+
+    + label {
+      bottom: 0;
+      transition: bottom .2s ease-in, font-size .2s ease-in;
+    }
+
+    &[value=""] + label {
+      bottom: calc($padding / 2);
+    }
+
+    &:not([value=""]) + label {
+      bottom: 100%;
+      font-size: $font-size-sm;
+    }
+
+    &:focus {
+
+      &[value=""] + label {
+        bottom: 100%;
+        font-size: $font-size-sm;
+      }
+    }
+
+  }
+
+  svg {
+    position: absolute;
+    bottom: calc($padding / 2);
+    right: 0;
+    width: $font-size;
+    height: $font-size;
+  }
+
+  &.check {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+
+    label {
+      flex-grow: 1;
+    }
+
+    input {
+      width: 24px;
+      color: $color-green;
+
+      &[value=""] + label {
+        bottom: calc($padding / 2);
+      }
+
+      &:not([value=""]) + label {
+        bottom: calc($padding / 2);
+        font-size: initial;
+      }
+
+      &:focus {
+
+        &[value=""] + label {
+          bottom: calc($padding / 2);
+          font-size: initial;
+        }
+      }
+    }
+  }
+
+  &.focus input + label {
+    bottom: 100%;
+    font-size: $font-size-sm;
+  }
+}
+
+.helper {
+  padding: (calc($padding / 2)) 0;
+  font-size: $font-sm;
+}
+
+.red {
+  color: $color-red;
+}
+
+.valid {
+  border-bottom: 1px solid $color-green;
+
+  svg path {
+    color: $color-green;
+  }
+}
+
+.invalid {
+  border-bottom: 1px solid $color-red;
+
+  svg path {
+    color: $color-red;
+  }
+}

@@ -1,0 +1,28 @@
+@import '~variables';
+
+.title {
+  font-size: $font-title-sm;
+  font-weight: 700;
+  letter-spacing: 0.1;
+  margin-bottom: $margin-sm;
+  color: $color-dark-grey;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+@media (min-width: $layout-desktop) {
+  .title {
+    font-size: $font-title;
+    margin-bottom: $margin-lg;
+  }
+
+  .noMargin {
+    margin: 0;
+  }
+}

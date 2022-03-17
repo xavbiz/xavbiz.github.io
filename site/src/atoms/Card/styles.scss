@@ -1,0 +1,13 @@
+@import '~variables';
+
+.card {
+  background-color: $color-white;
+  box-shadow: 2px 2px 3px 0px $color-grey;
+  padding: calc(2 * #{$padding-sm});
+}
+
+@media (min-width: $layout-desktop) {
+  .card {
+    padding: $padding-lg;
+  }
+}

@@ -1,0 +1,11 @@
+@import '~variables';
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: $color-green;
+  text-decoration-thickness: 3px;
+
+  &:hover {
+    background-color: $color-green;
+  }
+}

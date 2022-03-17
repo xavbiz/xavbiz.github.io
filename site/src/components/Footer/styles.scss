@@ -1,0 +1,10 @@
+@import '~variables';
+
+.footer {
+  height: $footer-height;
+  max-height: $footer-height;
+  line-height: $footer-height;
+  width: 100%;
+  text-align: center;
+  font-size: $font-body-sm;
+}

@@ -1,0 +1,168 @@
+@import '~variables';
+
+$title-bg: rgba(255,255,255,.5);
+
+.bg {
+  background-image: url('~assets/coconuts-nursery.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.paragraphWithoutBottomMargin {
+  margin-bottom: 0;
+}
+
+.titleWrapper {
+  margin: $header-height auto 0;
+  padding: 100px 0;
+}
+
+.titleText {
+  background-color: $title-bg;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $padding-sm;
+}
+
+.title {
+  color: $color-black;
+  text-align: left;
+  font-size: 2rem;
+  display: block;
+  padding-bottom: .5rem;
+
+  span {
+    display: block;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+.titleButtons {
+  margin-top: 60px;
+  margin: 36px 0 18px;
+}
+
+.hero {
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  color: $color-grey;
+  padding: (2 * $padding-lg) 0;
+
+  strong {
+    color: $color-green;
+  }
+}
+
+.dropdown {
+  margin-bottom: $margin-lg;
+}
+
+.step {
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color-green;
+}
+
+.quote {
+  font-size: 1.75rem;
+  font-style: italic;
+  color: $color-white;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+
+  > a:first-of-type {
+    margin-right: $margin-lg;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.containerSpan {
+  color: $color-grey;
+  font-size: 1rem;
+  display: block;
+  padding-top: $padding-lg;
+}
+
+.containerCta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $margin-lg;
+
+  > button {
+    margin-right: $margin-lg;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.list {
+  padding-left: 3rem;
+}
+
+.exceptionSubtitle {
+  font-size: 1.1rem;
+  line-height: 0;
+  font-weight: 500;
+}
+
+.important {
+  color: $color-green;
+  font-weight: 600;
+}
+
+@media (min-width: $layout-desktop) {
+
+  .titleWrapper {
+    max-width: $content-wrapper;
+  }
+
+  .titleText {
+    padding: 0 50px;
+    background: 0;
+  }
+
+  .title span {
+    color: $color-white;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 1px 1px $color-grey;
+  }
+
+  .hero {
+    font-size: 2.2rem;
+    padding: (3 * $padding-lg) 0;
+    font-weight: 300;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+
+  .containerCta {
+    margin-bottom: 0;
+  }
+
+  .marginTop {
+    margin-top: calc(2 * #{$margin-lg});
+  }
+}

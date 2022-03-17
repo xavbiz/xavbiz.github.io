@@ -1,0 +1,10 @@
+@import '~variables';
+
+$header-height: 80px;
+$footer-height: 20px;
+
+.container {
+  margin-top: $header-height;
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+  position: relative;
+}

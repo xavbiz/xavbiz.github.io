@@ -1,0 +1,43 @@
+.parent {
+  overflow: hidden;
+}
+
+.fromLeft.isVisible {
+  animation: fromLeft .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  opacity: 1;
+}
+
+.fromRight.isVisible {
+  animation: fromRight .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  opacity: 1;
+}
+
+.fromTop.isVisible {
+  animation: fromTop .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+

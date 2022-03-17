@@ -1,0 +1,61 @@
+@import '~variables';
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: ($padding-lg * 1.5) 0;
+  background-color: $color-green;
+}
+
+.grey {
+  background-color: $color-light-grey;
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-white;
+  max-width: $content-wrapper;
+  margin: 0 auto;
+  text-align: center;
+
+  > button, > a {
+    margin-top: $margin-lg;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.title, .content {
+  width: 100%;
+  max-width: $content-wrapper-sm;
+}
+
+@media (min-width: $layout-desktop) {
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .title, .content {
+    flex-direction: row;
+    max-width: $content-wrapper;
+    justify-content: center;
+
+    > button, > a {
+      margin: 0 15px;
+    }
+  }
+}

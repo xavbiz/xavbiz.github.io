@@ -17,7 +17,7 @@ jobs:
           cd ./site
           npm install
           npm run build && \
-          cp -r ./site/dist/. ./docs/
+          cp -r ./dist/. ./docs/
 
       - name: Committing build
         run: |

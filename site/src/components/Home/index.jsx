@@ -29,6 +29,7 @@ export const Home = () => {
           <Grid.Item col="1">
               <Title noMargin>Who we are</Title>
               <Paragraph>Xavier Richard and Pierre Saint-Arroman set up <strong>Amazon Caribbean Guyana Ltd</strong> in 1986, <strong>built 3 canning factories</strong> for the processing of manicole palms and pineapple in Region 1,2 and 5.. Since then, the company has been taken over by <strong>local entrepreneurs who have further expanded</strong>, providing revenue to thousands of households.</Paragraph>
+              <Paragraph>Xavier Guy Richard leads due diligences on behalf Swiss institutions which invest into agroforestry projects in Africa (Mango, Moringa, Pecan nuts trees), Brazil (Bactris, Acai palm trees), Suriname (Cherry and Moringa tress), French Guyana, Peru and Nicaragua (Cocoa and Coffee trees).</Paragraph>
               <Paragraph>Today, we congratulate young Guyanese entrepreneurs developing cutting edge farming projects such as the <strong>Plymton farm, the Caribbean Coconuts & Spices estate</strong>, and others.</Paragraph>
               <Paragraph><Quote>Hundreds of such projects can blossom in Guyana through innovative co-financing mechanism.</Quote></Paragraph>
               <Paragraph><strong>We deal with international institutions</strong> looking for agriculture development opportunities, particularly in agro-forestry (coffee, cocoa, coconut, cherry trees, papaya, golden apple, breadfruit, jackfruit trees, brazil nut trees, manicole palm, etc. ) in any Region of Guyana.</Paragraph>

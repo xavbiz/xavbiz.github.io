@@ -135,7 +135,7 @@ const groups = [
 ];
 
 const URL = 'https://api.staticforms.xyz/submit';
-const ACCESS_KEY = 'f753ab3d-f93c-4652-bd86-2c8a429ba751';
+const ACCESS_KEY = 'ac2af8ed-4440-408b-9685-2323cf8a69a7';
 
 export const Contact = () => {
   const [inputList, setInputList] = useState(groups.reduce((i, j) => [...j.inputs, ...i], []));

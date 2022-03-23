@@ -8,16 +8,16 @@ import { Icon } from '~atoms';
 import styles from './styles.scss';
 
 export const Checkbox = ({ onClick, name, value }) => {
-  const [innerValue, setInnerValue] = useState(value === '' ? false : true);
+  const [innerValue, setInnerValue] = useState(value === '' ? 'off' : 'on');
 
   const toggle = () => {
-    setInnerValue(!innerValue);
+    setInnerValue(innerValue === 'off' ? 'on' : 'off');
   };
 
   return (
     <span className={styles.box} onClick={toggle}>
       <input type="hidden" name={name} onClick={onClick} value={innerValue} />
-      {innerValue ? (
+      {innerValue === 'on' ? (
         <FontAwesomeIcon icon={faCheckSquare} />
       ) : (
         <FontAwesomeIcon icon={faSquare} />

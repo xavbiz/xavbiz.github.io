@@ -134,7 +134,8 @@ const groups = [
   }
 ];
 
-const URL = 'https://api.staticforms.xyz/submit';
+// const URL = 'https://api.staticforms.xyz/submit';
+const URL = 'https://localhost/submit';
 const ACCESS_KEY = 'ac2af8ed-4440-408b-9685-2323cf8a69a7';
 
 export const Contact = () => {
@@ -178,31 +179,39 @@ export const Contact = () => {
   const submit = (e) => {
     e.preventDefault();
 
-    setSubmitting(true);
-
     const newInputList = inputList.map(i => ({
       ...i,
       errors:
         i.type === 'textarea' ? [] : i.validator ? [i.validator(formElement.current[i.name].value)] : [],
     }));
 
-    const isFormValid = newInputList.every(i => (i.errors[0] === false || i.errors.length === 0));
+    const hasNoErrors = newInputList.every(i => (i.errors[0] === false || i.errors.length === 0));
+    const hasAtLeastOneValue = newInputList.some(i => {
+      if (i.type === 'checkbox') {
+        return formElement.current[i.name].value === 'on';
+      } else {
+        return formElement.current[i.name].value !== '';
+      }
+    });
+
+    const isFormValid = hasNoErrors && hasAtLeastOneValue;
 
     if (!isFormValid) {
       setInputList(newInputList.map(i => ({ ...i, errors: i.errors[0] === false ? [] : i.errors })));
-      setSubmitting(false);
       return;
     }
 
     setFormValues(inputList.reduce((a, i) => ({ ...a, [i.name]: formElement.current[i.name].value}), {}));
+
+    setSubmitting(true);
   };
 
   return (
     <div className={styles.page}>
       <div className={styles.bg} />
       <Section>
-        <Grid col="3">
-          <Grid.Item col="110">
+        <Grid col="5">
+          <Grid.Item col="01110">
             <Card>
               <Title>Let us know about your project:</Title>
               <Paragraph>We could find financing solutions for its feasibility study, emergence and expansion.</Paragraph>

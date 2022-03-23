@@ -47,7 +47,11 @@ export const Input = ({ className, name, label, type, helperText, required, vali
       err && setErrors((r) => ({ ...r, errors: [err]} ));
     } else {
       setInvalid(false);
-      setValid(true);
+      if (val !== '') {
+        setValid(true);
+      } else {
+        setValid(false);
+      }
       setErrors((r) => ({ ...r, errors: [] }));
     }
   }, [value]);

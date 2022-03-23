@@ -134,8 +134,7 @@ const groups = [
   }
 ];
 
-// const URL = 'https://api.staticforms.xyz/submit';
-const URL = 'https://localhost/submit';
+const URL = 'https://api.staticforms.xyz/submit';
 const ACCESS_KEY = 'ac2af8ed-4440-408b-9685-2323cf8a69a7';
 
 export const Contact = () => {

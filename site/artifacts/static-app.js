@@ -326,7 +326,13 @@ var Input_Input = function Input(_ref) {
       });
     } else {
       setInvalid(false);
-      setValid(true);
+
+      if (val !== '') {
+        setValid(true);
+      } else {
+        setValid(false);
+      }
+
       setErrors(function (r) {
         return _objectSpread(_objectSpread({}, r), {}, {
           errors: []
@@ -1240,13 +1246,13 @@ var Checkbox_Checkbox = function Checkbox(_ref) {
       name = _ref.name,
       value = _ref.value;
 
-  var _useState = Object(external_react_["useState"])(value === '' ? false : true),
+  var _useState = Object(external_react_["useState"])(value === '' ? 'off' : 'on'),
       _useState2 = slicedToArray_default()(_useState, 2),
       innerValue = _useState2[0],
       setInnerValue = _useState2[1];
 
   var toggle = function toggle() {
-    setInnerValue(!innerValue);
+    setInnerValue(innerValue === 'off' ? 'on' : 'off');
   };
 
   return /*#__PURE__*/external_react_default.a.createElement("span", {
@@ -1257,7 +1263,7 @@ var Checkbox_Checkbox = function Checkbox(_ref) {
     name: name,
     onClick: onClick,
     value: innerValue
-  }), innerValue ? /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+  }), innerValue === 'on' ? /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
     icon: free_solid_svg_icons_["faCheckSquare"]
   }) : /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
     icon: free_regular_svg_icons_["faSquare"]
@@ -1944,8 +1950,9 @@ var groups = [{
     name: 'phone',
     label: 'Your cell phone number'
   }]
-}];
-var URL = 'https://api.staticforms.xyz/submit';
+}]; // const URL = 'https://api.staticforms.xyz/submit';
+
+var URL = 'https://localhost/submit';
 var ACCESS_KEY = 'ac2af8ed-4440-408b-9685-2323cf8a69a7';
 var Contact_Contact = function Contact() {
   var _useState = Object(external_react_["useState"])(groups.reduce(function (i, j) {
@@ -2041,15 +2048,22 @@ var Contact_Contact = function Contact() {
 
   var submit = function submit(e) {
     e.preventDefault();
-    setSubmitting(true);
     var newInputList = inputList.map(function (i) {
       return _objectSpread(_objectSpread({}, i), {}, {
         errors: i.type === 'textarea' ? [] : i.validator ? [i.validator(formElement.current[i.name].value)] : []
       });
     });
-    var isFormValid = newInputList.every(function (i) {
+    var hasNoErrors = newInputList.every(function (i) {
       return i.errors[0] === false || i.errors.length === 0;
     });
+    var hasAtLeastOneValue = newInputList.some(function (i) {
+      if (i.type === 'checkbox') {
+        return formElement.current[i.name].value === 'on';
+      } else {
+        return formElement.current[i.name].value !== '';
+      }
+    });
+    var isFormValid = hasNoErrors && hasAtLeastOneValue;
 
     if (!isFormValid) {
       setInputList(newInputList.map(function (i) {
@@ -2057,13 +2071,13 @@ var Contact_Contact = function Contact() {
           errors: i.errors[0] === false ? [] : i.errors
         });
       }));
-      setSubmitting(false);
       return;
     }
 
     setFormValues(inputList.reduce(function (a, i) {
       return _objectSpread(_objectSpread({}, a), {}, defineProperty_default()({}, i.name, formElement.current[i.name].value));
     }, {}));
+    setSubmitting(true);
   };
 
   return /*#__PURE__*/external_react_default.a.createElement("div", {
@@ -2071,9 +2085,9 @@ var Contact_Contact = function Contact() {
   }, /*#__PURE__*/external_react_default.a.createElement("div", {
     className: Contact_styles_default.a.bg
   }), /*#__PURE__*/external_react_default.a.createElement(atoms["k" /* Section */], null, /*#__PURE__*/external_react_default.a.createElement(atoms["d" /* Grid */], {
-    col: "3"
+    col: "5"
   }, /*#__PURE__*/external_react_default.a.createElement(atoms["d" /* Grid */].Item, {
-    col: "110"
+    col: "01110"
   }, /*#__PURE__*/external_react_default.a.createElement(atoms["b" /* Card */], null, /*#__PURE__*/external_react_default.a.createElement(atoms["m" /* Title */], null, "Let us know about your project:"), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "We could find financing solutions for its feasibility study, emergence and expansion."), /*#__PURE__*/external_react_default.a.createElement("form", {
     ref: formElement,
     action: "",

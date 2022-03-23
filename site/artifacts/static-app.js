@@ -1950,9 +1950,8 @@ var groups = [{
     name: 'phone',
     label: 'Your cell phone number'
   }]
-}]; // const URL = 'https://api.staticforms.xyz/submit';
-
-var URL = 'https://localhost/submit';
+}];
+var URL = 'https://api.staticforms.xyz/submit';
 var ACCESS_KEY = 'ac2af8ed-4440-408b-9685-2323cf8a69a7';
 var Contact_Contact = function Contact() {
   var _useState = Object(external_react_["useState"])(groups.reduce(function (i, j) {

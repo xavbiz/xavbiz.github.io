@@ -22,6 +22,7 @@ jobs:
           mkdir docs
           cp -r ./site/dist/. ./docs/
           cp ./CNAME ./docs/CNAME
+          cp ./.nojekyll ./docs/.nojekyll
 
       - name: Committing build
         run: |

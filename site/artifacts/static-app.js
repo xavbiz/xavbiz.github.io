@@ -158,10 +158,10 @@ __webpack_require__.d(__webpack_exports__, "c", function() { return /* reexport 
 var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/PageContainer/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/PageContainer/styles.scss
 var styles = __webpack_require__(55);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/PageContainer/index.js
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/PageContainer/index.js
 
 
 
@@ -185,11 +185,11 @@ var router_ = __webpack_require__(12);
 var external_classnames_ = __webpack_require__(1);
 var external_classnames_default = /*#__PURE__*/__webpack_require__.n(external_classnames_);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Button/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Button/styles.scss
 var Button_styles = __webpack_require__(28);
 var Button_styles_default = /*#__PURE__*/__webpack_require__.n(Button_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Button/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Button/index.jsx
 
 
 
@@ -226,11 +226,11 @@ var objectWithoutProperties_default = /*#__PURE__*/__webpack_require__.n(objectW
 // EXTERNAL MODULE: external "@fortawesome/free-solid-svg-icons"
 var free_solid_svg_icons_ = __webpack_require__(6);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Input/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Input/styles.scss
 var Input_styles = __webpack_require__(9);
 var Input_styles_default = /*#__PURE__*/__webpack_require__.n(Input_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Input/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Input/index.jsx
 
 
 
@@ -326,7 +326,13 @@ var Input_Input = function Input(_ref) {
       });
     } else {
       setInvalid(false);
-      setValid(true);
+
+      if (val !== '') {
+        setValid(true);
+      } else {
+        setValid(false);
+      }
+
       setErrors(function (r) {
         return _objectSpread(_objectSpread({}, r), {}, {
           errors: []
@@ -369,7 +375,7 @@ var Input_Input = function Input(_ref) {
 // EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
 var react_fontawesome_ = __webpack_require__(27);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Icon/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Icon/index.jsx
 
 
 var Icon_excluded = ["icon", "className", "onClick"];
@@ -388,11 +394,11 @@ var Icon_Icon = function Icon(_ref) {
   }, props));
 };
 /* harmony default export */ var atoms_Icon = (Icon_Icon);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Select/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Select/styles.scss
 var Select_styles = __webpack_require__(8);
 var Select_styles_default = /*#__PURE__*/__webpack_require__.n(Select_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Select/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Select/index.jsx
 
 
 
@@ -562,11 +568,11 @@ var Select_Select = function Select(_ref) {
   }, errors["default"]) : null);
 };
 /* harmony default export */ var atoms_Select = (Select_Select);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Picture/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Picture/styles.scss
 var Picture_styles = __webpack_require__(38);
 var Picture_styles_default = /*#__PURE__*/__webpack_require__.n(Picture_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Picture/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Picture/index.jsx
 
 
 
@@ -588,11 +594,11 @@ var Picture_Picture = function Picture(_ref) {
   }));
 };
 /* harmony default export */ var atoms_Picture = (Picture_Picture);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/List/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/List/styles.scss
 var List_styles = __webpack_require__(56);
 var List_styles_default = /*#__PURE__*/__webpack_require__.n(List_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/List/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/List/index.jsx
 
 
 
@@ -610,11 +616,11 @@ List_List.Item = function (_ref2) {
 };
 
 /* harmony default export */ var atoms_List = (List_List);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Grid/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Grid/styles.scss
 var Grid_styles = __webpack_require__(23);
 var Grid_styles_default = /*#__PURE__*/__webpack_require__.n(Grid_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Grid/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Grid/index.jsx
 
 
 
@@ -647,11 +653,11 @@ Grid_Grid.Item = function (_ref2) {
 };
 
 /* harmony default export */ var atoms_Grid = (Grid_Grid);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Card/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Card/styles.scss
 var Card_styles = __webpack_require__(57);
 var Card_styles_default = /*#__PURE__*/__webpack_require__.n(Card_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Card/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Card/index.jsx
 
 
 
@@ -663,11 +669,11 @@ var Card_Card = function Card(_ref) {
   }, children);
 };
 /* harmony default export */ var atoms_Card = (Card_Card);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Title/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Title/styles.scss
 var Title_styles = __webpack_require__(33);
 var Title_styles_default = /*#__PURE__*/__webpack_require__.n(Title_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Title/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Title/index.jsx
 
 
 
@@ -684,11 +690,11 @@ var Title_Title = function Title(_ref) {
   }, children);
 };
 /* harmony default export */ var atoms_Title = (Title_Title);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/SubTitle/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/SubTitle/styles.scss
 var SubTitle_styles = __webpack_require__(34);
 var SubTitle_styles_default = /*#__PURE__*/__webpack_require__.n(SubTitle_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/SubTitle/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/SubTitle/index.jsx
 
 
 
@@ -711,11 +717,11 @@ SubTitle_SubTitle.Sub = function (_ref2) {
 };
 
 /* harmony default export */ var atoms_SubTitle = (SubTitle_SubTitle);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Paragraph/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Paragraph/styles.scss
 var Paragraph_styles = __webpack_require__(29);
 var Paragraph_styles_default = /*#__PURE__*/__webpack_require__.n(Paragraph_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Paragraph/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Paragraph/index.jsx
 
 
 
@@ -733,11 +739,11 @@ var Paragraph_Paragraph = function Paragraph(_ref) {
   }, children);
 };
 /* harmony default export */ var atoms_Paragraph = (Paragraph_Paragraph);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Dropdown/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Dropdown/styles.scss
 var Dropdown_styles = __webpack_require__(30);
 var Dropdown_styles_default = /*#__PURE__*/__webpack_require__.n(Dropdown_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Dropdown/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Dropdown/index.jsx
 
 
 
@@ -813,11 +819,11 @@ Dropdown_Dropdown.Opened = function (_ref5) {
 };
 
 /* harmony default export */ var atoms_Dropdown = (Dropdown_Dropdown);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Section/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Section/styles.scss
 var Section_styles = __webpack_require__(31);
 var Section_styles_default = /*#__PURE__*/__webpack_require__.n(Section_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Section/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Section/index.jsx
 
 
 
@@ -837,11 +843,11 @@ var Section_Section = function Section(_ref) {
   }, children));
 };
 /* harmony default export */ var atoms_Section = (Section_Section);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Hero/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Hero/styles.scss
 var Hero_styles = __webpack_require__(24);
 var Hero_styles_default = /*#__PURE__*/__webpack_require__.n(Hero_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Hero/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Hero/index.jsx
 
 
 
@@ -872,11 +878,11 @@ Hero_Hero.Content = function (_ref3) {
 };
 
 /* harmony default export */ var atoms_Hero = (Hero_Hero);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Slider/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Slider/styles.scss
 var Slider_styles = __webpack_require__(10);
 var Slider_styles_default = /*#__PURE__*/__webpack_require__.n(Slider_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Slider/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Slider/index.jsx
 
 
 
@@ -969,11 +975,11 @@ Slider_Slider.Item = function (_ref2) {
 };
 
 /* harmony default export */ var atoms_Slider = (Slider_Slider);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Textarea/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Textarea/styles.scss
 var Textarea_styles = __webpack_require__(11);
 var Textarea_styles_default = /*#__PURE__*/__webpack_require__.n(Textarea_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Textarea/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Textarea/index.jsx
 
 
 
@@ -1086,7 +1092,7 @@ var Textarea_Textarea = function Textarea(_ref) {
   }, errors["default"]) : null);
 };
 /* harmony default export */ var atoms_Textarea = (Textarea_Textarea);
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/utils.js
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/utils.js
 var composeCb = function composeCb(events) {
   return function () {
     return events.flat(2).forEach(function (event) {
@@ -1094,11 +1100,11 @@ var composeCb = function composeCb(events) {
     });
   };
 };
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Link/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Link/styles.scss
 var Link_styles = __webpack_require__(39);
 var Link_styles_default = /*#__PURE__*/__webpack_require__.n(Link_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Link/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Link/index.jsx
 
 
 
@@ -1124,11 +1130,11 @@ var Link_CustomLink = function CustomLink(_ref) {
   }, children);
 };
 /* harmony default export */ var Link = (Link_CustomLink);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Animate/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Animate/styles.scss
 var Animate_styles = __webpack_require__(18);
 var Animate_styles_default = /*#__PURE__*/__webpack_require__.n(Animate_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Animate/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Animate/index.jsx
 
 
 var Animate_options = {
@@ -1202,11 +1208,11 @@ Animate_Animate.FromTop = function (_ref4) {
 };
 
 /* harmony default export */ var atoms_Animate = (Animate_Animate);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Quote/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Quote/styles.scss
 var Quote_styles = __webpack_require__(40);
 var Quote_styles_default = /*#__PURE__*/__webpack_require__.n(Quote_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Quote/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Quote/index.jsx
 
 
 
@@ -1223,11 +1229,11 @@ var Quote_Quote = function Quote(_ref) {
 // EXTERNAL MODULE: external "@fortawesome/free-regular-svg-icons"
 var free_regular_svg_icons_ = __webpack_require__(58);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Checkbox/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Checkbox/styles.scss
 var Checkbox_styles = __webpack_require__(59);
 var Checkbox_styles_default = /*#__PURE__*/__webpack_require__.n(Checkbox_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/Checkbox/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/Checkbox/index.jsx
 
 
 
@@ -1240,13 +1246,13 @@ var Checkbox_Checkbox = function Checkbox(_ref) {
       name = _ref.name,
       value = _ref.value;
 
-  var _useState = Object(external_react_["useState"])(value === '' ? false : true),
+  var _useState = Object(external_react_["useState"])(value === '' ? 'off' : 'on'),
       _useState2 = slicedToArray_default()(_useState, 2),
       innerValue = _useState2[0],
       setInnerValue = _useState2[1];
 
   var toggle = function toggle() {
-    setInnerValue(!innerValue);
+    setInnerValue(innerValue === 'off' ? 'on' : 'off');
   };
 
   return /*#__PURE__*/external_react_default.a.createElement("span", {
@@ -1257,14 +1263,14 @@ var Checkbox_Checkbox = function Checkbox(_ref) {
     name: name,
     onClick: onClick,
     value: innerValue
-  }), innerValue ? /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+  }), innerValue === 'on' ? /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
     icon: free_solid_svg_icons_["faCheckSquare"]
   }) : /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
     icon: free_regular_svg_icons_["faSquare"]
   }));
 };
 /* harmony default export */ var atoms_Checkbox = (Checkbox_Checkbox);
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/atoms/index.js
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/index.js
 
 
 
@@ -1627,13 +1633,13 @@ var free_solid_svg_icons_ = __webpack_require__(6);
 var external_classnames_ = __webpack_require__(1);
 var external_classnames_default = /*#__PURE__*/__webpack_require__.n(external_classnames_);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/routes/index.js
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/routes/index.js
 var routes = __webpack_require__(14);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/atoms/index.js + 22 modules
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/atoms/index.js + 22 modules
 var atoms = __webpack_require__(3);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/hooks.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/hooks.jsx
 
 
 var hooks_usePageNavigation = function usePageNavigation() {
@@ -1675,10 +1681,10 @@ var hooks_usePageNavigation = function usePageNavigation() {
 // EXTERNAL MODULE: external "@reach/router"
 var router_ = __webpack_require__(12);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/components/Header/components/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Header/components/styles.scss
 var styles = __webpack_require__(60);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/components/Header/components/Logo.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Header/components/Logo.jsx
 
 
 
@@ -1693,13 +1699,13 @@ var Logo_Logo = function Logo(_ref) {
 };
 
 /* harmony default export */ var components_Logo = (Logo_Logo);
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/components/Header/components/index.js
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Header/components/index.js
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/components/Header/style.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Header/style.scss
 var style = __webpack_require__(15);
 var style_default = /*#__PURE__*/__webpack_require__.n(style);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/components/Header/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Header/index.jsx
 
 
 
@@ -1756,10 +1762,10 @@ var Header_Header = function Header(props) {
 };
 
 /* harmony default export */ var components_Header = (Header_Header);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/components/Footer/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Footer/styles.scss
 var Footer_styles = __webpack_require__(61);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/components/Footer/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Footer/index.jsx
 
 
 var Footer_Footer = function Footer() {
@@ -1768,11 +1774,11 @@ var Footer_Footer = function Footer() {
   }, /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, "\xA9 Carbon Free Planet - ", new Date().getFullYear())));
 };
 /* harmony default export */ var components_Footer = (Footer_Footer);
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/components/Home/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Home/styles.scss
 var Home_styles = __webpack_require__(19);
 var Home_styles_default = /*#__PURE__*/__webpack_require__.n(Home_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/components/Home/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Home/index.jsx
 
 
 
@@ -1822,11 +1828,11 @@ var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableA
 var regenerator_ = __webpack_require__(42);
 var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator_);
 
-// EXTERNAL MODULE: /home/runner/work/xavier/xavier/site/src/components/Contact/styles.scss
+// EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Contact/styles.scss
 var Contact_styles = __webpack_require__(7);
 var Contact_styles_default = /*#__PURE__*/__webpack_require__.n(Contact_styles);
 
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/components/Contact/index.jsx
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Contact/index.jsx
 
 
 
@@ -1944,8 +1950,9 @@ var groups = [{
     name: 'phone',
     label: 'Your cell phone number'
   }]
-}];
-var URL = 'https://api.staticforms.xyz/submit';
+}]; // const URL = 'https://api.staticforms.xyz/submit';
+
+var URL = 'https://localhost/submit';
 var ACCESS_KEY = 'ac2af8ed-4440-408b-9685-2323cf8a69a7';
 var Contact_Contact = function Contact() {
   var _useState = Object(external_react_["useState"])(groups.reduce(function (i, j) {
@@ -2041,15 +2048,22 @@ var Contact_Contact = function Contact() {
 
   var submit = function submit(e) {
     e.preventDefault();
-    setSubmitting(true);
     var newInputList = inputList.map(function (i) {
       return _objectSpread(_objectSpread({}, i), {}, {
         errors: i.type === 'textarea' ? [] : i.validator ? [i.validator(formElement.current[i.name].value)] : []
       });
     });
-    var isFormValid = newInputList.every(function (i) {
+    var hasNoErrors = newInputList.every(function (i) {
       return i.errors[0] === false || i.errors.length === 0;
     });
+    var hasAtLeastOneValue = newInputList.some(function (i) {
+      if (i.type === 'checkbox') {
+        return formElement.current[i.name].value === 'on';
+      } else {
+        return formElement.current[i.name].value !== '';
+      }
+    });
+    var isFormValid = hasNoErrors && hasAtLeastOneValue;
 
     if (!isFormValid) {
       setInputList(newInputList.map(function (i) {
@@ -2057,13 +2071,13 @@ var Contact_Contact = function Contact() {
           errors: i.errors[0] === false ? [] : i.errors
         });
       }));
-      setSubmitting(false);
       return;
     }
 
     setFormValues(inputList.reduce(function (a, i) {
       return _objectSpread(_objectSpread({}, a), {}, defineProperty_default()({}, i.name, formElement.current[i.name].value));
     }, {}));
+    setSubmitting(true);
   };
 
   return /*#__PURE__*/external_react_default.a.createElement("div", {
@@ -2071,9 +2085,9 @@ var Contact_Contact = function Contact() {
   }, /*#__PURE__*/external_react_default.a.createElement("div", {
     className: Contact_styles_default.a.bg
   }), /*#__PURE__*/external_react_default.a.createElement(atoms["k" /* Section */], null, /*#__PURE__*/external_react_default.a.createElement(atoms["d" /* Grid */], {
-    col: "3"
+    col: "5"
   }, /*#__PURE__*/external_react_default.a.createElement(atoms["d" /* Grid */].Item, {
-    col: "110"
+    col: "01110"
   }, /*#__PURE__*/external_react_default.a.createElement(atoms["b" /* Card */], null, /*#__PURE__*/external_react_default.a.createElement(atoms["m" /* Title */], null, "Let us know about your project:"), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "We could find financing solutions for its feasibility study, emergence and expansion."), /*#__PURE__*/external_react_default.a.createElement("form", {
     ref: formElement,
     action: "",
@@ -2137,7 +2151,7 @@ var Contact_Contact = function Contact() {
   }, "Send"))))))));
 };
 /* harmony default export */ var components_Contact = (Contact_Contact);
-// CONCATENATED MODULE: /home/runner/work/xavier/xavier/site/src/components/index.js
+// CONCATENATED MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/index.js
 
 
 
@@ -3167,7 +3181,7 @@ module.exports = require("@babel/runtime/regenerator");
 /* 43 */
 /***/ (function(module, exports) {
 
-module.exports = require("/home/runner/work/xavier/xavier/site/node_modules/react-static/lib/browser");
+module.exports = require("/home/runner/work/xavbiz.github.io/xavbiz.github.io/site/node_modules/react-static/lib/browser");
 
 /***/ }),
 /* 44 */
@@ -4218,7 +4232,7 @@ exports["default"] = _default;
 /* 75 */
 /***/ (function(module, exports) {
 
-module.exports = require("/home/runner/work/xavier/xavier/site/node_modules/react-static/lib/browser/hooks/useStaticInfo");
+module.exports = require("/home/runner/work/xavbiz.github.io/xavbiz.github.io/site/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
 /* 76 */

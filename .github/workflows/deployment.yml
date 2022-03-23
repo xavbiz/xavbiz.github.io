@@ -21,6 +21,7 @@ jobs:
           rm -r ./docs/
           mkdir docs
           cp -r ./site/dist/. ./docs/
+          cp ./CNAME ./docs/CNAME
 
       - name: Committing build
         run: |

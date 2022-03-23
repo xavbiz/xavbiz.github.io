@@ -1,6 +1,7 @@
 {
   "name": "Carbon Free Planet",
   "private": true,
+  "homepage": "https://xavbiz.github.io",
   "scripts": {
     "start": "./node_modules/.bin/react-static start",
     "stage": "./node_modules/.bin/react-static build --staging",

@@ -31,6 +31,10 @@
     "/home/runner/work/xavbiz.github.io/xavbiz.github.io/site/node_modules/react-static-plugin-sitemap/dist/node.api.js",
     "/home/runner/work/xavbiz.github.io/xavbiz.github.io/site"
   ],
+  "devServer": {
+    "host": "localhost",
+    "port": 3030
+  },
   "paths": {
     "ROOT": "/home/runner/work/xavbiz.github.io/xavbiz.github.io/site",
     "SRC": "/home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src",
@@ -51,10 +55,6 @@
   "extractCssChunks": false,
   "inlineCss": false,
   "babelExcludes": [],
-  "devServer": {
-    "host": "localhost",
-    "port": 3000
-  },
   "terser": {
     "terserOptions": {
       "mangle": {},

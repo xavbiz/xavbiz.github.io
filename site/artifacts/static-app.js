@@ -1771,7 +1771,7 @@ var Footer_styles = __webpack_require__(61);
 var Footer_Footer = function Footer() {
   return /*#__PURE__*/external_react_default.a.createElement("footer", {
     className: Footer_styles["footer"]
-  }, /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, "\xA9 Carbon Free Planet - ", new Date().getFullYear())));
+  }, /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", null, "\xA9 Carbon Free Planet - ", new Date().getFullYear()), /*#__PURE__*/external_react_default.a.createElement("li", null, "Credits: Coconut trees  / Pomeroon Trading | Caribbean Coconuts & Spices")));
 };
 /* harmony default export */ var components_Footer = (Footer_Footer);
 // EXTERNAL MODULE: /home/runner/work/xavbiz.github.io/xavbiz.github.io/site/src/components/Home/styles.scss
@@ -1807,7 +1807,7 @@ var Home_Home = function Home() {
     col: "1"
   }, /*#__PURE__*/external_react_default.a.createElement(atoms["m" /* Title */], {
     noMargin: true
-  }, "Who we are"), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "Xavier Richard and Pierre Saint-Arroman set up ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "Amazon Caribbean Guyana Ltd"), " in 1986, ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "built 3 canning factories"), " for the processing of manicole palms and pineapple in Region 1,2 and 5.. Since then, the company has been taken over by ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "local entrepreneurs who have further expanded"), ", providing revenue to thousands of households."), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "Xavier Guy Richard leads due diligences on behalf Swiss institutions which invest into agroforestry projects in Africa (Mango, Moringa, Pecan nuts trees), Brazil (Bactris, Acai palm trees), Suriname (Cherry and Moringa tress), French Guyana, Peru and Nicaragua (Cocoa and Coffee trees)."), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "Today, we congratulate young Guyanese entrepreneurs developing cutting edge farming projects such as the ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "Plymton farm, the Caribbean Coconuts & Spices estate"), ", and others."), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, /*#__PURE__*/external_react_default.a.createElement(atoms["j" /* Quote */], null, "Hundreds of such projects can blossom in Guyana through innovative co-financing mechanism.")), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, /*#__PURE__*/external_react_default.a.createElement("strong", null, "We deal with international institutions"), " looking for agriculture development opportunities, particularly in agro-forestry (coffee, cocoa, coconut, cherry trees, papaya, golden apple, breadfruit, jackfruit trees, brazil nut trees, manicole palm, etc. ) in any Region of Guyana.")))), /*#__PURE__*/external_react_default.a.createElement(atoms["k" /* Section */], {
+  }, "Who we are"), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "Xavier Richard and Pierre Saint-Arroman set up ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "Amazon Caribbean Guyana Ltd"), " in 1986, having ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "built 3 canning factories"), " for the processing of manicole palms and pineapple in Region 1,2 and 5. Since then, the company has been taken over by ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "local entrepreneurs who have further expanded"), ", providing revenue to thousands of households."), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "Xavier Guy Richard leads due diligences on behalf of Swiss institutions which invest into agroforestry projects in Africa (Mango, Moringa, Pecan nuts trees), Brazil (Bactris, Acai palm trees), Suriname (Cherry and Moringa trees), French Guyana, Peru and Nicaragua (Cocoa and Coffee trees)."), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, "Today, we congratulate young Guyanese entrepreneurs developing cutting edge farming projects such as the ", /*#__PURE__*/external_react_default.a.createElement("strong", null, "Plymton farm, the Caribbean Coconuts & Spices estate"), ", and others."), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, /*#__PURE__*/external_react_default.a.createElement(atoms["j" /* Quote */], null, "Hundreds of such projects can blossom in Guyana through an innovative financing mechanism.")), /*#__PURE__*/external_react_default.a.createElement(atoms["i" /* Paragraph */], null, /*#__PURE__*/external_react_default.a.createElement("strong", null, "We deal with international institutions"), " looking for agriculture development opportunities, particularly in agro-forestry (coffee, cocoa, coconut, cherry trees, papaya, golden apple, breadfruit, jackfruit trees, brazil nut trees, manicole palm, etc. ) in any Region of Guyana.")))), /*#__PURE__*/external_react_default.a.createElement(atoms["k" /* Section */], {
     margin: true
   }, /*#__PURE__*/external_react_default.a.createElement(atoms["e" /* Hero */], {
     grey: true
@@ -1876,7 +1876,7 @@ var groups = [{
   }, {
     type: 'text',
     name: '$isFarmerSurface',
-    label: 'On which surface (acres)?'
+    label: 'How many acres?'
   }, {
     type: 'text',
     name: '$isFarmerRegion',
@@ -1896,7 +1896,7 @@ var groups = [{
   }, {
     type: 'checkbox',
     name: '$isFarmerTypeOfOwnership',
-    label: 'Do you own your land, rent to private owner, lease to the government?'
+    label: 'Do you own your land, rent from private owner, lease from the government?'
   }, {
     type: 'checkbox',
     name: '$isFarmerInAssociation',
@@ -1920,7 +1920,7 @@ var groups = [{
   }, {
     type: 'text',
     name: '$notFarmerSurface',
-    label: 'On which surface (acres)?'
+    label: 'How many acres?'
   }, {
     type: 'text',
     name: '$notFarmerRegion',
@@ -1928,7 +1928,7 @@ var groups = [{
   }, {
     type: 'checkbox',
     name: '$notFarmerTypeOfOwnership',
-    label: 'Will it be on your own land, rent to private owner, lease to the government?'
+    label: 'Will it be on your own land, rent from private owner, lease from the government?'
   }, {
     type: 'checkbox',
     name: '$notFarmerLookingForFinancing',
@@ -1939,7 +1939,7 @@ var groups = [{
     label: 'Will you look for technical assistance?'
   }]
 }, {
-  title: 'Leave us your contact informations',
+  title: 'Leave us your contact information',
   name: 'contact',
   inputs: [{
     type: 'email',
@@ -3532,7 +3532,7 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(5)(true);
 // Module
-exports.push([module.i, "._3gkvqWrKofkjy1DPCJhvqv{height:20px;max-height:20px;line-height:20px;width:100%;text-align:center;font-size:.875rem}", "",{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,yBAAQ,WAAW,CAAC,eAAe,CAAC,gBAAgB,CAAC,UAAU,CAAC,iBAAiB,CAAC,iBAAiB","file":"styles.scss","sourcesContent":[".footer{height:20px;max-height:20px;line-height:20px;width:100%;text-align:center;font-size:.875rem}"]}]);
+exports.push([module.i, "._3gkvqWrKofkjy1DPCJhvqv{height:40px;max-height:40px;line-height:40px;width:100%;text-align:center;font-size:.875rem}", "",{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,yBAAQ,WAAW,CAAC,eAAe,CAAC,gBAAgB,CAAC,UAAU,CAAC,iBAAiB,CAAC,iBAAiB","file":"styles.scss","sourcesContent":[".footer{height:40px;max-height:40px;line-height:40px;width:100%;text-align:center;font-size:.875rem}"]}]);
 
 // Exports
 exports.locals = {

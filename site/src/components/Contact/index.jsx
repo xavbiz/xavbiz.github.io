@@ -36,7 +36,7 @@ const groups = [
       {
         type: 'text',
         name: '$isFarmerSurface',
-        label: 'On which surface (acres)?',
+        label: 'How many acres?',
       },
       {
         type: 'text',
@@ -61,7 +61,7 @@ const groups = [
       {
         type: 'checkbox',
         name: '$isFarmerTypeOfOwnership',
-        label: 'Do you own your land, rent to private owner, lease to the government?',
+        label: 'Do you own your land, rent from private owner, lease from the government?',
       },
       {
         type: 'checkbox',
@@ -92,7 +92,7 @@ const groups = [
       {
         type: 'text',
         name: '$notFarmerSurface',
-        label: 'On which surface (acres)?',
+        label: 'How many acres?',
       },
       {
         type: 'text',
@@ -102,7 +102,7 @@ const groups = [
       {
         type: 'checkbox',
         name: '$notFarmerTypeOfOwnership',
-        label: 'Will it be on your own land, rent to private owner, lease to the government?',
+        label: 'Will it be on your own land, rent from private owner, lease from the government?',
       },
       {
         type: 'checkbox',
@@ -117,7 +117,7 @@ const groups = [
     ],
   },
   {
-    title: 'Leave us your contact informations',
+    title: 'Leave us your contact information',
     name: 'contact',
     inputs: [
       {

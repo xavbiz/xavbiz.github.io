@@ -6,6 +6,6 @@ COPY ./site/package*.json ./
 
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 3030
 
 CMD ["npm", "run", "start"]

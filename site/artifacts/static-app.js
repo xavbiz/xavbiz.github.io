@@ -1895,8 +1895,12 @@ var groups = [{
     label: 'Which types of crops would you like to plant?'
   }, {
     type: 'checkbox',
-    name: '$isFarmerTypeOfOwnership',
-    label: 'Do you own your land, rent from private owner, lease from the government?'
+    name: '$isFarmerOwnsHisLand',
+    label: 'Do you own your land?'
+  }, {
+    type: 'checkbox',
+    name: '$isFarmerLeaseFromGovernment',
+    label: 'Do you lease from the government?'
   }, {
     type: 'checkbox',
     name: '$isFarmerInAssociation',
